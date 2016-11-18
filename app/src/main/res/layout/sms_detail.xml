@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:background="@color/green_light"
+              android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="70dp">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent"
+                       android:id="@+id/imgSMSDetail"
+                       android:src="@drawable/sms"
+                       android:layout_height="50dp"/>
+            <ImageView android:layout_width="35dp"
+                       android:id="@+id/imgBackDetail"
+                       android:layout_below="@+id/imgSMSDetail"
+                       android:layout_marginRight="5dp"
+                       android:layout_alignParentRight="true"
+                       android:background="@drawable/back_green"
+                       android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                      android:layout_weight="4"
+                      android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tvNameDetail"
+                      android:text="GV Thanh"
+                      android:textColor="@android:color/holo_green_dark"
+                      style="?android:attr/textAppearanceLarge"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tvTimeDetail"
+                      android:text="19:27'"
+                      android:layout_alignParentBottom="true"
+                      android:textColor="@android:color/black"
+                      style="?android:attr/textAppearanceMedium"
+                      android:layout_alignParentRight="true"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tvDateDetail"
+                      android:layout_toLeftOf="@id/tvTimeDetail"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginRight="6dp"
+                      android:text="21/02/2016"
+                      android:textColor="@android:color/black"
+                      style="?android:attr/textAppearanceMedium"
+                      android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:id="@+id/tvPurportDetail"
+              android:padding="10dp"
+              android:background="@drawable/shape_text"
+              android:text="jncjsdbfsjdbj j jsjcjsdb"
+              android:textColor="@android:color/black"
+              style="?android:attr/textAppearanceMedium"
+              android:layout_height="150dp"/>
+    <Button android:layout_width="150dp"
+            android:id="@+id/btnReply"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/state_btn"
+            android:text="Reply"
+            android:textSize="20dp"
+            android:layout_height="60dp"/>
+
+</LinearLayout>

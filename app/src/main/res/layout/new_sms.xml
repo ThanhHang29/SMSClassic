@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:background="@drawable/shape_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="70dp">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent"
+                       android:id="@+id/imgSMSNew"
+                       android:src="@drawable/sms"
+                       android:layout_height="50dp"/>
+            <ImageView android:layout_width="35dp"
+                       android:id="@+id/imgNextNew"
+                       android:layout_below="@+id/imgSMSNew"
+                       android:layout_marginRight="5dp"
+                       android:layout_alignParentRight="true"
+                       android:background="@drawable/next_green"
+                       android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:id="@+id/tvSendTo"
+                      android:text="Send to:"
+                      android:textColor="@android:color/holo_green_dark"
+                      style="?android:attr/textAppearanceLarge"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+            <EditText android:layout_width="match_parent"
+                      android:background="@drawable/shape_text"
+                      android:layout_marginLeft="5dp"
+                      android:id="@+id/edtNameSend"
+                      android:hint="phone number"
+                      android:padding="10dp"
+                      android:textStyle="bold"
+                      android:textSize="15dp"
+                      android:layout_toRightOf="@id/tvSendTo"
+                      android:textColor="@android:color/holo_blue_bright"
+                      android:layout_height="50dp">
+                      <requestFocus/>
+            </EditText>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <EditText android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:id="@+id/edtPurportNew"
+              android:padding="10dp"
+              android:background="@drawable/shape_text"
+              android:hint="nhập tin tin nhắn"
+              android:textColor="@android:color/black"
+              style="?android:attr/textAppearanceMedium"
+              android:layout_height="150dp">
+        <requestFocus/>
+    </EditText>
+    <Button android:layout_width="150dp"
+            android:id="@+id/btnSendNew"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/state_btn"
+            android:text="Send"
+            android:textSize="20dp"
+            android:layout_height="70dp"/>
+</LinearLayout>

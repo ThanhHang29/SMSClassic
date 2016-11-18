@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SMSClassic</string>
+    <string name="sms">SMS Classic</string>
+    <string name="sent">Đã gửi!</string>
+    <string name="sent_fail">Gửi thất bại!</string>
+    <string name="no_device">Không có dịch vụ!</string>
+    <string name="radio_off">Mất sóng!</string>
+    <string name="null_pdu">Null PDU!</string>
+    <string name="delivered">Tin nhắn được gửi đi!</string>
+    <string name="delivered_fail">Tin nhắn không được gửi đi!</string>
+    <string name="phone_empty">nhập số điện thoại bạn ơi!!</string>
+    <string name="message_empty">Nhập tin nhắn đi bạn!</string>
+    <string name="empty">Phone number hoặc tin nhắn bị trống!!</string>
+</resources>
